@@ -1,0 +1,8 @@
+pandas
+fastapi[standard]
+uvicorn[standard]
+pydantic
+python-multipart
+matplotlib
+scikit-learn
+tensorflow>=2.17.0
