@@ -1,8 +1,17 @@
 from fastapi import FastAPI as API
 from pydantic import BaseModel
-from supabase import 
+from fastapi.middleware.cors import CORSMiddleware
 
 app = API()
+
+# Добавляем CORS поддержку
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Разрешаем все источники
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def read_root():
@@ -29,7 +38,16 @@ async def prediction(dataSensorData: SensorData):
     print(dataSensorData)
     return {"prediction": "ok"}
 
-@app.post("/web-server")
-async def dataofpipelines(Static_features: Static_features_of_pipelines):
-    supabase.tab
+@app.get("/sensor-data")
+async def get_sensor_data():
+    """Получить текущие данные датчиков"""
+    import random
+    return {
+        "temperature": round(65 + random.random() * 10, 1),
+        "pressure": round(850 + random.random() * 50),
+        "thicknessLoss": round(1.2 + random.random() * 0.3, 2),
+        "timestamp": "2026-01-19T10:00:00Z"
+    }
+
+
     
