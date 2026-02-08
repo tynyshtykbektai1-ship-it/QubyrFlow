@@ -14,9 +14,6 @@ pipe = {
     "Time_Years": 21,
     "Condition": "Moderate"
 }
-
-
-
 data = pd.DataFrame([pipe])
 data = pd.get_dummies(data, drop_first=True)
 train_features = joblib.load("train_features.pkl")

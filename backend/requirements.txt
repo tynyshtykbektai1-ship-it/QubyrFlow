@@ -5,3 +5,5 @@ pydantic
 python-multipart
 matplotlib
 scikit-learn
+supabase
+numpy

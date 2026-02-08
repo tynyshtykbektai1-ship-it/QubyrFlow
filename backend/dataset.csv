@@ -1,5 +1,5 @@
 Pipe_Size_mm,Thickness_mm,Material,Grade,Max_Pressure_psi,Temperature_C,Corrosion_Impact_Percent,Thickness_Loss_mm,Material_Loss_Percent,Time_Years,Condition
-800,4815.,Carbon Steel,ASTM A333 Grade 6,300,84.9,16.04,4.91,31.72,2,Moderate
+800,48.15,Carbon Steel,ASTM A333 Grade 6,300,84.9,16.04,4.91,31.72,2,Moderate
 800,22.0,PVC,ASTM A106 Grade B,150,14.1,7.38,7.32,33.27,4,Critical
 400,12.05,Carbon Steel,API 5L X52,2500,0.6,2.12,6.32,52.45,7,Critical
 1500,38.72,Carbon Steel,API 5L X42,1500,52.7,5.58,6.2,16.01,19,Critical

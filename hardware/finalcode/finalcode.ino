@@ -7,7 +7,7 @@ Adafruit_BMP085 bmp;
 const char* ssid = "Shynar-Kausar";
 const char* password = "bektai201409";
 
-const char* serverName = "http://192.168.100.237:8000/sensors";
+const char* serverName = "http://192.168.100.237:8000/sensors/1";
 unsigned long lastTime = 0;
 unsigned long timerDelay = 5000;
 
@@ -39,7 +39,7 @@ void setup() {
 
 void read_sensors() {
   temperature = bmp.readTemperature();
-  pressure = bmp.readSealevelPressure();
+  pressure = bmp.readSealevelPressure() * 0.000145038;
 }
 
 void send_data() {

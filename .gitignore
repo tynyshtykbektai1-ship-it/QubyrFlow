@@ -1,6 +1,1 @@
-backend/main_env/
-<<<<<<< HEAD
-frontend/node_modules/
-=======
-__pycache__
->>>>>>> 19cbfbd886a06c99fbc99e15bcada76e6b750107
+backend/venv/
